@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:purple_pill-cache
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -164,21 +165,8 @@ Text Label 4350 4250 2    50   ~ 0
 PC12
 Text Label 4350 4350 2    50   ~ 0
 PC13
-Text Label 4350 4450 2    50   ~ 0
-OSC32IN
-Text Label 4350 4550 2    50   ~ 0
-OSC32OUT
 Text Label 4350 2850 2    50   ~ 0
 PD2
-Text Label 4350 2650 2    50   ~ 0
-OSCOUT
-Text Label 4350 2550 2    50   ~ 0
-OSCIN
-Text Label 5400 4850 0    50   ~ 0
-GND
-Wire Wire Line
-	5400 4850 5300 4850
-Connection ~ 5300 4850
 $Comp
 L power:GND #PWR?
 U 1 1 5CD2588C
@@ -255,7 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 4450 6850 4450
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J?
+L purple_pill-rescue:Conn_ARM_JTAG_SWD_10-Connector J?
 U 1 1 5CD22C3E
 P 8400 4100
 F 0 "J?" H 7959 4146 50  0000 R CNN
@@ -541,4 +529,256 @@ Connection ~ 9150 2900
 NoConn ~ 8550 2400
 NoConn ~ 8550 2500
 NoConn ~ 4200 -250
+$Comp
+L Device:Crystal_GND24_Small X1
+U 1 1 5CD7A058
+P 3850 2450
+F 0 "X1" V 3896 2306 50  0000 R CNN
+F 1 "8Mhz" V 3805 2306 50  0000 R CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 3850 2450 50  0001 C CNN
+F 3 "~" H 3850 2450 50  0001 C CNN
+	1    3850 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD9D5FD
+P 3450 2250
+F 0 "C?" V 3198 2250 50  0000 C CNN
+F 1 "20pF" V 3289 2250 50  0000 C CNN
+F 2 "" H 3488 2100 50  0001 C CNN
+F 3 "~" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD9E471
+P 3450 2650
+F 0 "C?" V 3198 2650 50  0000 C CNN
+F 1 "20pF" V 3289 2650 50  0000 C CNN
+F 2 "" H 3488 2500 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD9E8F5
+P 2850 2650
+F 0 "#PWR?" H 2850 2400 50  0001 C CNN
+F 1 "GND" H 2855 2477 50  0000 C CNN
+F 2 "" H 2850 2650 50  0001 C CNN
+F 3 "" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2350 3850 2250
+Wire Wire Line
+	3850 2250 3600 2250
+Wire Wire Line
+	3850 2550 3850 2650
+Wire Wire Line
+	3850 2650 3600 2650
+Wire Wire Line
+	3300 2250 3300 2450
+Wire Wire Line
+	3300 2450 2850 2450
+Wire Wire Line
+	2850 2450 2850 2650
+Connection ~ 3300 2450
+Wire Wire Line
+	3300 2450 3300 2650
+Wire Wire Line
+	4500 2650 3850 2650
+Connection ~ 3850 2650
+Wire Wire Line
+	4500 2550 4500 2250
+Wire Wire Line
+	4500 2250 3850 2250
+Connection ~ 3850 2250
+Wire Wire Line
+	3950 2450 4000 2450
+Wire Wire Line
+	4000 2450 4000 2600
+Wire Wire Line
+	4000 2600 3700 2600
+Wire Wire Line
+	3700 2600 3700 2450
+Wire Wire Line
+	3700 2450 3750 2450
+Wire Wire Line
+	3700 2450 3300 2450
+Connection ~ 3700 2450
+$Comp
+L Device:Crystal X2
+U 1 1 5CDC20B4
+P 3900 4650
+F 0 "X2" V 3854 4781 50  0000 L CNN
+F 1 "32.768KHz" V 3945 4781 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 3900 4650 50  0001 C CNN
+F 3 "~" H 3900 4650 50  0001 C CNN
+	1    3900 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4450 3900 4450
+$Comp
+L Device:C C?
+U 1 1 5CDD9AE5
+P 3500 4450
+F 0 "C?" V 3248 4450 50  0000 C CNN
+F 1 "12.5pF" V 3339 4450 50  0000 C CNN
+F 2 "" H 3538 4300 50  0001 C CNN
+F 3 "~" H 3500 4450 50  0001 C CNN
+	1    3500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CDD9AEF
+P 3500 4850
+F 0 "C?" V 3248 4850 50  0000 C CNN
+F 1 "12.5pF" V 3339 4850 50  0000 C CNN
+F 2 "" H 3538 4700 50  0001 C CNN
+F 3 "~" H 3500 4850 50  0001 C CNN
+	1    3500 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CDD9AF9
+P 2900 4850
+F 0 "#PWR?" H 2900 4600 50  0001 C CNN
+F 1 "GND" H 2905 4677 50  0000 C CNN
+F 2 "" H 2900 4850 50  0001 C CNN
+F 3 "" H 2900 4850 50  0001 C CNN
+	1    2900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4450 3350 4650
+Wire Wire Line
+	3350 4650 2900 4650
+Wire Wire Line
+	2900 4650 2900 4850
+Connection ~ 3350 4650
+Wire Wire Line
+	3350 4650 3350 4850
+Wire Wire Line
+	3900 4450 3900 4500
+Wire Wire Line
+	3900 4450 3650 4450
+Connection ~ 3900 4450
+Wire Wire Line
+	3900 4800 3900 4850
+Wire Wire Line
+	3900 4850 3650 4850
+Wire Wire Line
+	3900 4850 4500 4850
+Wire Wire Line
+	4500 4550 4500 4850
+Connection ~ 3900 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5CE00ECE
+P 5200 5050
+F 0 "#PWR?" H 5200 4800 50  0001 C CNN
+F 1 "GND" H 5205 4877 50  0000 C CNN
+F 2 "" H 5200 5050 50  0001 C CNN
+F 3 "" H 5200 5050 50  0001 C CNN
+	1    5200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4850 5200 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5CE0B9C1
+P 6250 6350
+F 0 "#PWR?" H 6250 6100 50  0001 C CNN
+F 1 "GND" H 6255 6177 50  0000 C CNN
+F 2 "" H 6250 6350 50  0001 C CNN
+F 3 "" H 6250 6350 50  0001 C CNN
+	1    6250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CE0BED9
+P 6250 5550
+F 0 "#PWR?" H 6250 5400 50  0001 C CNN
+F 1 "+3V3" H 6265 5723 50  0000 C CNN
+F 2 "" H 6250 5550 50  0001 C CNN
+F 3 "" H 6250 5550 50  0001 C CNN
+	1    6250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CE0C660
+P 6250 5950
+F 0 "C?" H 6365 5996 50  0000 L CNN
+F 1 "100nF" H 6365 5905 50  0000 L CNN
+F 2 "" H 6288 5800 50  0001 C CNN
+F 3 "~" H 6250 5950 50  0001 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CE0D100
+P 6750 5950
+F 0 "C?" H 6865 5996 50  0000 L CNN
+F 1 "100nF" H 6865 5905 50  0000 L CNN
+F 2 "" H 6788 5800 50  0001 C CNN
+F 3 "~" H 6750 5950 50  0001 C CNN
+	1    6750 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CE0D791
+P 7250 5950
+F 0 "C?" H 7365 5996 50  0000 L CNN
+F 1 "100nF" H 7365 5905 50  0000 L CNN
+F 2 "" H 7288 5800 50  0001 C CNN
+F 3 "~" H 7250 5950 50  0001 C CNN
+	1    7250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CE0DD28
+P 7750 5950
+F 0 "C?" H 7865 5996 50  0000 L CNN
+F 1 "100nF" H 7865 5905 50  0000 L CNN
+F 2 "" H 7788 5800 50  0001 C CNN
+F 3 "~" H 7750 5950 50  0001 C CNN
+	1    7750 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5550 6250 5800
+Wire Wire Line
+	6250 5800 6750 5800
+Connection ~ 6250 5800
+Connection ~ 6750 5800
+Wire Wire Line
+	6750 5800 7250 5800
+Connection ~ 7250 5800
+Wire Wire Line
+	7250 5800 7750 5800
+Wire Wire Line
+	7750 6100 7250 6100
+Connection ~ 6750 6100
+Wire Wire Line
+	6750 6100 6250 6100
+Connection ~ 7250 6100
+Wire Wire Line
+	7250 6100 6750 6100
+Wire Wire Line
+	6250 6100 6250 6350
+Connection ~ 6250 6100
 $EndSCHEMATC
