@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:purple_pill-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -667,47 +667,13 @@ F 3 "~" H 6750 5950 50  0001 C CNN
 	1    6750 5950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C10
-U 1 1 5CE0D791
-P 7250 5950
-F 0 "C10" H 7365 5996 50  0000 L CNN
-F 1 "100nF" H 7365 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7288 5800 50  0001 C CNN
-F 3 "~" H 7250 5950 50  0001 C CNN
-	1    7250 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5CE0DD28
-P 7750 5950
-F 0 "C12" H 7865 5996 50  0000 L CNN
-F 1 "100nF" H 7865 5905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7788 5800 50  0001 C CNN
-F 3 "~" H 7750 5950 50  0001 C CNN
-	1    7750 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 5550 6250 5800
 Wire Wire Line
 	6250 5800 6750 5800
 Connection ~ 6250 5800
-Connection ~ 6750 5800
-Wire Wire Line
-	6750 5800 7250 5800
-Connection ~ 7250 5800
-Wire Wire Line
-	7250 5800 7750 5800
-Wire Wire Line
-	7750 6100 7250 6100
-Connection ~ 6750 6100
 Wire Wire Line
 	6750 6100 6250 6100
-Connection ~ 7250 6100
-Wire Wire Line
-	7250 6100 6750 6100
 Wire Wire Line
 	6250 6100 6250 6350
 Connection ~ 6250 6100
@@ -1040,57 +1006,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0114
 U 1 1 5D325A4C
-P 5100 5500
-F 0 "#PWR0114" H 5100 5250 50  0001 C CNN
-F 1 "GND" H 5105 5327 50  0000 C CNN
-F 2 "" H 5100 5500 50  0001 C CNN
-F 3 "" H 5100 5500 50  0001 C CNN
-	1    5100 5500
+P 5200 5050
+F 0 "#PWR0114" H 5200 4800 50  0001 C CNN
+F 1 "GND" H 5205 4877 50  0000 C CNN
+F 2 "" H 5200 5050 50  0001 C CNN
+F 3 "" H 5200 5050 50  0001 C CNN
+	1    5200 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 5350 5100 5500
-$Comp
-L power:GNDA #PWR0115
-U 1 1 5D3359AF
-P 5300 5500
-F 0 "#PWR0115" H 5300 5250 50  0001 C CNN
-F 1 "GNDA" H 5305 5327 50  0000 C CNN
-F 2 "" H 5300 5500 50  0001 C CNN
-F 3 "" H 5300 5500 50  0001 C CNN
-	1    5300 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0116
-U 1 1 5D34C82E
-P 950 4350
-F 0 "#PWR0116" H 950 4100 50  0001 C CNN
-F 1 "GNDA" H 955 4177 50  0000 C CNN
-F 2 "" H 950 4350 50  0001 C CNN
-F 3 "" H 950 4350 50  0001 C CNN
-	1    950  4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 4250 950  4250
-Wire Wire Line
-	950  4250 950  4350
-$Comp
-L power:GNDA #PWR0117
-U 1 1 5D35CDB4
-P 950 7300
-F 0 "#PWR0117" H 950 7050 50  0001 C CNN
-F 1 "GNDA" H 955 7127 50  0000 C CNN
-F 2 "" H 950 7300 50  0001 C CNN
-F 3 "" H 950 7300 50  0001 C CNN
-	1    950  7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 7200 950  7200
-Wire Wire Line
-	950  7200 950  7300
 $Comp
 L power:+3V3 #PWR0118
 U 1 1 5D373143
@@ -1123,21 +1046,6 @@ Wire Wire Line
 Connection ~ 5100 850 
 Wire Wire Line
 	5100 850  5100 1050
-$Comp
-L Device:Jumper_NC_Small JP5
-U 1 1 5D3D41E6
-P 5200 5350
-F 0 "JP5" H 5200 5562 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 5200 5471 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5200 5350 50  0001 C CNN
-F 3 "~" H 5200 5350 50  0001 C CNN
-	1    5200 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 5500 5300 5350
-Connection ~ 5300 5350
-Connection ~ 5100 5350
 $Comp
 L power:GND #PWR0119
 U 1 1 5D3F70C5
@@ -1232,11 +1140,6 @@ F 3 "~" H 3200 2050 50  0001 C CNN
 	1    3200 2050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5300 4750 5300 5350
-Wire Wire Line
-	5100 4850 5100 5350
-Connection ~ 5100 4850
 $Comp
 L Jumper:Jumper_3_Bridged12 JP3
 U 1 1 5D63C94B
@@ -1315,4 +1218,19 @@ Text Label 7800 3800 1    50   ~ 0
 RESET
 Wire Wire Line
 	7900 3800 7800 3800
+Wire Wire Line
+	5300 4750 5300 4850
+Wire Wire Line
+	5300 4850 5200 4850
+Connection ~ 5200 4850
+Wire Wire Line
+	5200 4850 5200 5050
+Wire Wire Line
+	1300 4250 1300 4350
+Connection ~ 1300 4350
+Wire Wire Line
+	1300 7200 1300 7300
+Connection ~ 1300 7300
+NoConn ~ 1500 4550
+NoConn ~ 1500 7500
 $EndSCHEMATC
