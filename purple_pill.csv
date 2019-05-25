@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C8,C11";"C_1210_3225Metric_Pad1.42x2.65mm_HandSolder";2;"100nF";;;
+2;"J1,J2";"PinHeader_1x24_P2.54mm_Vertical";2;"Conn_01x24_MountingPin";;;
+3;"JP1,JP6,JP4,JP2";"SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm";4;"Jumper_NC_Small";;;
+4;"C4,C3";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"20pF";;;
+5;"J4";"USB_C_Receptacle_Amphenol_12401610E4-2A";1;"USB_C_Receptacle_USB2.0";;;
+6;"X2";"Crystal_SMD_3215-2Pin_3.2x1.5mm";1;"32.768KHz";;;
+7;"X1";"Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm";1;"8Mhz";;;
+8;"U2";"SOT-223-3_TabPin2";1;"LD1117S33TR_SOT223";;;
+9;"U1";"LQFP-64_10x10mm_P0.5mm";1;"STM32F405RGTx";;;
+10;"R9,R8";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"5R1K";;;
+11;"R7,R6,R2,R1";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";4;"22R";;;
+12;"R5,R4,R3";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"10K";;;
+13;"JP3";"SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels";1;"BOOT";;;
+14;"J3";"PinHeader_2x05_P1.27mm_Vertical_SMD";1;"JTAG_SWD_10";;;
+15;"C9,C7";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"100nF";;;
+16;"C6,C5";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"12.5pF";;;
+17;"C2,C1";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"2.2uF";;;
